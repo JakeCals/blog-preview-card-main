@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-background: hsl(47, 88%, 63%);
+  --second-background: hsl(0, 0%, 100%);
+  --transparent-text: hsl(0, 0%, 50%);
+  --bolder-text: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--primary-background);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 375px;
+  background-color: var(--second-background);
+  padding: 1.5em;
+  border: 1px solid var(--bolder-text);
+  border-radius: 1em;
+  box-shadow: 0.4em 0.4em 0 var(--bolder-text);
+  transition: 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0.5em 0.5em 0 var(--bolder-text);
+}
+
+.card .hero-img img {
+  width: 100%;
+  border-radius: 0.75em;
+  margin-bottom: 0.3em;
+}
+
+.card .information a {
+  display: inline-block;
+  margin: 1em 0;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--bolder-text);
+  background-color: var(--primary-background);
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+}
+
+.card .information .title-card {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--bolder-text);
+  margin: 0.8em 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card .information .title-card:hover {
+  color: var(--primary-background);
+}
+
+.card .information .description-card {
+  color: var(--transparent-text);
+  line-height: 1.5;
+  margin-bottom: 1.8em;
+}
+
+.card .profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.card .profile-card img {
+  width: 10%;
+}
+
+.card .profile-card .profile-name {
+  font-weight: 800;
+  color: var(--bolder-text);
+}
